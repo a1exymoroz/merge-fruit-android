@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Merge Fruit</string>
+
+    <!-- common -->
+    <string name="common_app_title">🍎 Fruit Merge</string>
+    <string name="common_app_title_game">🍎 Fruit Merge 🍎</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_email">Email</string>
+    <string name="common_password">Password</string>
+    <string name="common_email_placeholder">you@example.com</string>
+    <string name="common_password_placeholder">At least 8 characters</string>
+    <string name="common_cold_start_notice">The backend runs on Render\'s free tier and may sleep after inactivity. We wake it up automatically when you open the app — that can take up to ~50 seconds. Once it\'s ready, requests are much faster.</string>
+    <string name="common_cold_start_waiting">Connecting to the server… This may take up to ~50 seconds while it starts. We\'ll keep trying automatically — please wait.</string>
+
+    <!-- language -->
+    <string name="language_label">Language</string>
+    <string name="language_en">English</string>
+    <string name="language_pl">Polski</string>
+    <string name="language_ru">Русский</string>
+
+    <!-- theme -->
+    <string name="theme_label">Theme</string>
+    <string name="theme_classic">Classic</string>
+    <string name="theme_winter">Winter</string>
+
+    <!-- auth -->
+    <string name="auth_sign_in_to_play">Sign in to play</string>
+    <string name="auth_sign_in">Sign In</string>
+    <string name="auth_signing_in">Signing in…</string>
+    <string name="auth_no_account_prefix">Don\'t have an account?</string>
+    <string name="auth_has_account_prefix">Already have an account?</string>
+    <string name="auth_create_account">Create your account</string>
+    <string name="auth_display_name">Display name</string>
+    <string name="auth_display_name_placeholder">Your leaderboard name</string>
+    <string name="auth_sign_up">Sign Up</string>
+    <string name="auth_creating_account">Creating account…</string>
+    <string name="auth_verify_email">Verify your email</string>
+    <string name="auth_email_verified">Email verified!</string>
+    <string name="auth_email_verified_message">Your email has been verified.</string>
+    <string name="auth_continue_to_game">Continue to Game</string>
+    <string name="auth_open_verification_link">Open the verification link from your email to continue.</string>
+    <string name="auth_enter_code">Enter the 4-digit code from your email.</string>
+    <string name="auth_digit_label">Digit %1$d</string>
+    <string name="auth_verifying">Verifying…</string>
+    <string name="auth_verify_email_button">Verify Email</string>
+    <string name="auth_back_to_sign_in">Back to sign in</string>
+    <string name="auth_check_email_message">Please check your email for the verification link, then enter your 4-digit code.</string>
+    <string name="auth_verify_banner">Please verify your email to secure your account.</string>
+    <string name="auth_verify">Verify</string>
+    <string name="auth_hi">Hi, %1$s</string>
+    <string name="auth_log_out">Log out</string>
+    <string name="auth_log_in">Log in</string>
+    <string name="auth_or">or</string>
+    <string name="auth_guest_greeting">Playing as Guest</string>
+    <string name="auth_welcome_subtitle">Log in to save your scores to the leaderboard, or jump straight into the game as a guest.</string>
+    <string name="auth_continue_as_guest">Play as Guest</string>
+    <string name="auth_guest_note">As a guest, your scores won\'t be saved to the leaderboard.</string>
+
+    <!-- game -->
+    <string name="game_score">Score: %1$s</string>
+    <string name="game_score_short">Score</string>
+    <string name="game_next_short">Next</string>
+
+    <!-- boosters -->
+    <string name="booster_bomb">Bomb</string>
+    <string name="booster_upgrade">Upgrade</string>
+    <string name="booster_swap">Swap</string>
+    <string name="booster_hold">Hold</string>
+    <string name="booster_hint_bomb">Tap a fruit to remove it</string>
+    <string name="booster_hint_upgrade">Tap a fruit to level it up</string>
+    <string name="booster_cancel">Cancel</string>
+    <string name="game_high_score">High Score: %1$s</string>
+    <string name="game_next_fruit">Next Fruit:</string>
+    <string name="game_reset">Reset Game</string>
+    <string name="game_over_line_label">Game Over Line</string>
+    <string name="game_release_to_drop">Release to Drop</string>
+    <string name="game_move_to_position">Drag to Position</string>
+    <string name="game_over_title">Game Over!</string>
+    <string name="game_final_score">Final Score: %1$s</string>
+    <string name="game_new_high_score">🎉 New High Score! 🎉</string>
+    <string name="game_save_score_prompt">Save your score as %1$s?</string>
+    <string name="game_log_in_to_save_prompt">Log in to save your score to the leaderboard.</string>
+    <string name="game_saving">Saving…</string>
+    <string name="game_save_score">Save Score</string>
+    <string name="game_ranked">🏆 You ranked #%1$d!</string>
+    <string name="game_score_saved">Score saved!</string>
+    <string name="game_play_again">Play Again</string>
+
+    <!-- instructions -->
+    <string name="instructions_title">How to Play:</string>
+    <string name="instructions_touch">Touch and drag to position, release to drop</string>
+    <string name="instructions_merge">When 2 identical fruits touch, they instantly merge into the next larger fruit!</string>
+    <string name="instructions_chain">Chain reactions occur when merged fruits touch more identical fruits</string>
+    <string name="instructions_physics">Fruits roll, tip, and stack realistically — use physics to your advantage!</string>
+    <string name="instructions_game_over_rule">Don\'t let fruits stack above the Game Over line for 2 seconds!</string>
+    <string name="instructions_goal">Goal: Reach the Watermelon! 🍉</string>
+
+    <!-- leaderboard -->
+    <string name="leaderboard_title">🏆 Top 10</string>
+    <string name="leaderboard_loading">Loading…</string>
+    <string name="leaderboard_retry">Retry</string>
+    <string name="leaderboard_empty">No scores yet. Be the first!</string>
+
+    <!-- errors -->
+    <string name="error_login_failed">Login failed</string>
+    <string name="error_sign_up_failed">Sign up failed</string>
+    <string name="error_verification_failed">Verification failed</string>
+    <string name="error_authentication_failed">Authentication failed</string>
+    <string name="error_email_verification_failed">Email verification failed</string>
+    <string name="error_failed_to_submit_score">Failed to submit score</string>
+    <string name="error_failed_to_fetch_leaderboard">Failed to fetch leaderboard</string>
+    <string name="error_failed_to_load_scores">Failed to load scores</string>
+    <string name="error_session_expired">Session expired. Please sign in again.</string>
+    <string name="error_too_many_requests">Too many requests. Please wait a moment.</string>
+</resources>

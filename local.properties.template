@@ -1,0 +1,16 @@
+# API Configuration
+# These values will be used by the app to communicate with the backend.
+# You can override these in your local.properties file.
+
+# The base URL for the backend API during debug builds (e.g., running on emulator)
+# Default: http://10.0.2.2:8080
+debugApiBaseUrl=http://10.0.2.2:8080
+
+# The base URL for the backend API during release builds
+# Default: https://merge-fruit-api.onrender.com
+releaseApiBaseUrl=https://merge-fruit-api.onrender.com
+
+# Test Credentials (Optional)
+# Used to pre-fill the Login screen in debug builds.
+testUserEmail=user@example.com
+testUserPassword=password123

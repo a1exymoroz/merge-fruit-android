@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Merge Fruit</string>
+
+    <string name="common_app_title">🍎 Fruit Merge</string>
+    <string name="common_app_title_game">🍎 Fruit Merge 🍎</string>
+    <string name="common_loading">Загрузка…</string>
+    <string name="common_email">Эл. почта</string>
+    <string name="common_password">Пароль</string>
+    <string name="common_email_placeholder">you@example.com</string>
+    <string name="common_password_placeholder">Не менее 8 символов</string>
+    <string name="common_cold_start_notice">Бэкенд работает на бесплатном тарифе Render и может «засыпать» после простоя. Мы автоматически будим его при открытии приложения — это может занять до ~50 секунд. Когда сервер готов, запросы выполняются намного быстрее.</string>
+    <string name="common_cold_start_waiting">Подключение к серверу… Запуск может занять до ~50 секунд. Мы будем повторять попытки автоматически — пожалуйста, подождите.</string>
+
+    <string name="language_label">Язык</string>
+    <string name="language_en">English</string>
+    <string name="language_pl">Polski</string>
+    <string name="language_ru">Русский</string>
+
+    <string name="theme_label">Тема</string>
+    <string name="theme_classic">Классика</string>
+    <string name="theme_winter">Новый год</string>
+
+    <string name="auth_sign_in_to_play">Войдите, чтобы играть</string>
+    <string name="auth_sign_in">Войти</string>
+    <string name="auth_signing_in">Вход…</string>
+    <string name="auth_no_account_prefix">Нет аккаунта?</string>
+    <string name="auth_has_account_prefix">Уже есть аккаунт?</string>
+    <string name="auth_create_account">Создайте аккаунт</string>
+    <string name="auth_display_name">Отображаемое имя</string>
+    <string name="auth_display_name_placeholder">Ваше имя в таблице лидеров</string>
+    <string name="auth_sign_up">Регистрация</string>
+    <string name="auth_creating_account">Создание аккаунта…</string>
+    <string name="auth_verify_email">Подтвердите эл. почту</string>
+    <string name="auth_email_verified">Эл. почта подтверждена!</string>
+    <string name="auth_email_verified_message">Ваша эл. почта была подтверждена.</string>
+    <string name="auth_continue_to_game">Перейти к игре</string>
+    <string name="auth_open_verification_link">Откройте ссылку для подтверждения из письма, чтобы продолжить.</string>
+    <string name="auth_enter_code">Введите 4-значный код из письма.</string>
+    <string name="auth_digit_label">Цифра %1$d</string>
+    <string name="auth_verifying">Проверка…</string>
+    <string name="auth_verify_email_button">Подтвердить эл. почту</string>
+    <string name="auth_back_to_sign_in">Вернуться ко входу</string>
+    <string name="auth_check_email_message">Проверьте письмо со ссылкой для подтверждения, затем введите 4-значный код.</string>
+    <string name="auth_verify_banner">Подтвердите эл. почту, чтобы защитить аккаунт.</string>
+    <string name="auth_verify">Подтвердить</string>
+    <string name="auth_hi">Привет, %1$s</string>
+    <string name="auth_log_out">Выйти</string>
+    <string name="auth_log_in">Войти</string>
+    <string name="auth_or">или</string>
+    <string name="auth_guest_greeting">Вы играете как гость</string>
+    <string name="auth_welcome_subtitle">Войдите, чтобы сохранять результаты в таблице лидеров, или начните играть сразу как гость.</string>
+    <string name="auth_continue_as_guest">Играть как гость</string>
+    <string name="auth_guest_note">В гостевом режиме результаты не сохраняются в таблице лидеров.</string>
+
+    <string name="game_score">Счёт: %1$s</string>
+    <string name="game_score_short">Счёт</string>
+    <string name="game_next_short">Далее</string>
+
+    <string name="booster_bomb">Бомба</string>
+    <string name="booster_upgrade">Апгрейд</string>
+    <string name="booster_swap">Замена</string>
+    <string name="booster_hold">Карман</string>
+    <string name="booster_hint_bomb">Нажмите на фрукт, чтобы убрать его</string>
+    <string name="booster_hint_upgrade">Нажмите на фрукт, чтобы повысить уровень</string>
+    <string name="booster_cancel">Отмена</string>
+    <string name="game_high_score">Рекорд: %1$s</string>
+    <string name="game_next_fruit">Следующий фрукт:</string>
+    <string name="game_reset">Сбросить игру</string>
+    <string name="game_over_line_label">Линия проигрыша</string>
+    <string name="game_release_to_drop">Отпустите, чтобы бросить</string>
+    <string name="game_move_to_position">Перетащите, чтобы позиционировать</string>
+    <string name="game_over_title">Игра окончена!</string>
+    <string name="game_final_score">Итоговый счёт: %1$s</string>
+    <string name="game_new_high_score">🎉 Новый рекорд! 🎉</string>
+    <string name="game_save_score_prompt">Сохранить счёт как %1$s?</string>
+    <string name="game_log_in_to_save_prompt">Войдите, чтобы сохранить счёт в таблице лидеров.</string>
+    <string name="game_saving">Сохранение…</string>
+    <string name="game_save_score">Сохранить счёт</string>
+    <string name="game_ranked">🏆 Вы заняли %1$d-е место!</string>
+    <string name="game_score_saved">Счёт сохранён!</string>
+    <string name="game_play_again">Играть снова</string>
+
+    <string name="instructions_title">Как играть:</string>
+    <string name="instructions_touch">Коснитесь и перетащите для позиционирования, отпустите, чтобы бросить</string>
+    <string name="instructions_merge">Когда 2 одинаковых фрукта соприкасаются, они мгновенно объединяются в следующий больший фрукт!</string>
+    <string name="instructions_chain">Цепные реакции происходят, когда объединённые фрукты касаются других одинаковых фруктов</string>
+    <string name="instructions_physics">Фрукты катятся, наклоняются и складываются реалистично — используйте физику в свою пользу!</string>
+    <string name="instructions_game_over_rule">Не допускайте, чтобы фрукты складывались выше линии проигрыша в течение 2 секунд!</string>
+    <string name="instructions_goal">Цель: Достичь арбуза! 🍉</string>
+
+    <string name="leaderboard_title">🏆 Топ 10</string>
+    <string name="leaderboard_loading">Загрузка…</string>
+    <string name="leaderboard_retry">Повторить</string>
+    <string name="leaderboard_empty">Пока нет результатов. Будьте первым!</string>
+
+    <string name="error_login_failed">Не удалось войти</string>
+    <string name="error_sign_up_failed">Не удалось зарегистрироваться</string>
+    <string name="error_verification_failed">Не удалось подтвердить</string>
+    <string name="error_authentication_failed">Ошибка аутентификации</string>
+    <string name="error_email_verification_failed">Не удалось подтвердить эл. почту</string>
+    <string name="error_failed_to_submit_score">Не удалось сохранить счёт</string>
+    <string name="error_failed_to_fetch_leaderboard">Не удалось загрузить таблицу лидеров</string>
+    <string name="error_failed_to_load_scores">Не удалось загрузить результаты</string>
+    <string name="error_session_expired">Сессия истекла. Войдите снова.</string>
+    <string name="error_too_many_requests">Слишком много запросов. Подождите немного.</string>
+</resources>

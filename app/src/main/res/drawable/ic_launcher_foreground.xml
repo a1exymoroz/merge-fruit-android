@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Watermelon slice, ported from fruitArt.tsx id=11 -->
+    <path android:fillColor="#27AE60" android:pathData="M54,20 a34,34 0 1,0 0.01,0 z" />
+    <path android:fillColor="#ECF0F1" android:pathData="M54,24 a30,30 0 1,0 0.01,0 z" />
+    <path android:fillColor="#FF4757" android:pathData="M54,28 a26,26 0 1,0 0.01,0 z" />
+    <path android:fillColor="#2F3542" android:pathData="M52.5,47 l3,0 l0,10 l-3,0 z" />
+    <path android:fillColor="#2F3542" android:pathData="M35,52.5 l10,0 l0,3 l-10,0 z" />
+    <path android:fillColor="#2F3542" android:pathData="M63,52.5 l10,0 l0,3 l-10,0 z" />
+    <path android:fillColor="#2F3542" android:pathData="M52.5,63 l3,0 l0,10 l-3,0 z" />
+</vector>

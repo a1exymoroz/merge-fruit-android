@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Merge Fruit</string>
+
+    <string name="common_app_title">🍎 Fruit Merge</string>
+    <string name="common_app_title_game">🍎 Fruit Merge 🍎</string>
+    <string name="common_loading">Ładowanie…</string>
+    <string name="common_email">E-mail</string>
+    <string name="common_password">Hasło</string>
+    <string name="common_email_placeholder">ty@example.com</string>
+    <string name="common_password_placeholder">Co najmniej 8 znaków</string>
+    <string name="common_cold_start_notice">Backend działa na darmowym planie Render i może usypiać po bezczynności. Budzimy go automatycznie po otwarciu aplikacji — to może potrwać do ~50 sekund. Gdy serwer będzie gotowy, kolejne żądania będą znacznie szybsze.</string>
+    <string name="common_cold_start_waiting">Łączenie z serwerem… Uruchomienie może potrwać do ~50 sekund. Będziemy próbować ponownie automatycznie — proszę czekać.</string>
+
+    <string name="language_label">Język</string>
+    <string name="language_en">English</string>
+    <string name="language_pl">Polski</string>
+    <string name="language_ru">Русский</string>
+
+    <string name="theme_label">Motyw</string>
+    <string name="theme_classic">Klasyczny</string>
+    <string name="theme_winter">Zimowy</string>
+
+    <string name="auth_sign_in_to_play">Zaloguj się, aby grać</string>
+    <string name="auth_sign_in">Zaloguj się</string>
+    <string name="auth_signing_in">Logowanie…</string>
+    <string name="auth_no_account_prefix">Nie masz konta?</string>
+    <string name="auth_has_account_prefix">Masz już konto?</string>
+    <string name="auth_create_account">Utwórz konto</string>
+    <string name="auth_display_name">Nazwa wyświetlana</string>
+    <string name="auth_display_name_placeholder">Twoja nazwa w rankingu</string>
+    <string name="auth_sign_up">Zarejestruj się</string>
+    <string name="auth_creating_account">Tworzenie konta…</string>
+    <string name="auth_verify_email">Zweryfikuj swój e-mail</string>
+    <string name="auth_email_verified">E-mail zweryfikowany!</string>
+    <string name="auth_email_verified_message">Twój e-mail został zweryfikowany.</string>
+    <string name="auth_continue_to_game">Przejdź do gry</string>
+    <string name="auth_open_verification_link">Otwórz link weryfikacyjny z e-maila, aby kontynuować.</string>
+    <string name="auth_enter_code">Wpisz 4-cyfrowy kod z e-maila.</string>
+    <string name="auth_digit_label">Cyfra %1$d</string>
+    <string name="auth_verifying">Weryfikacja…</string>
+    <string name="auth_verify_email_button">Zweryfikuj e-mail</string>
+    <string name="auth_back_to_sign_in">Wróć do logowania</string>
+    <string name="auth_check_email_message">Sprawdź e-mail z linkiem weryfikacyjnym, a następnie wpisz 4-cyfrowy kod.</string>
+    <string name="auth_verify_banner">Zweryfikuj swój e-mail, aby zabezpieczyć konto.</string>
+    <string name="auth_verify">Zweryfikuj</string>
+    <string name="auth_hi">Cześć, %1$s</string>
+    <string name="auth_log_out">Wyloguj się</string>
+    <string name="auth_log_in">Zaloguj się</string>
+    <string name="auth_or">lub</string>
+    <string name="auth_guest_greeting">Grasz jako gość</string>
+    <string name="auth_welcome_subtitle">Zaloguj się, aby zapisywać wyniki w rankingu, albo przejdź od razu do gry jako gość.</string>
+    <string name="auth_continue_as_guest">Graj jako gość</string>
+    <string name="auth_guest_note">Jako gość Twoje wyniki nie będą zapisywane w rankingu.</string>
+
+    <string name="game_score">Wynik: %1$s</string>
+    <string name="game_score_short">Wynik</string>
+    <string name="game_next_short">Następny</string>
+
+    <string name="booster_bomb">Bomba</string>
+    <string name="booster_upgrade">Ulepszenie</string>
+    <string name="booster_swap">Zamiana</string>
+    <string name="booster_hold">Schowek</string>
+    <string name="booster_hint_bomb">Dotknij owoc, aby go usunąć</string>
+    <string name="booster_hint_upgrade">Dotknij owoc, aby podnieść poziom</string>
+    <string name="booster_cancel">Anuluj</string>
+    <string name="game_high_score">Rekord: %1$s</string>
+    <string name="game_next_fruit">Następny owoc:</string>
+    <string name="game_reset">Resetuj grę</string>
+    <string name="game_over_line_label">Linia końca gry</string>
+    <string name="game_release_to_drop">Puść, aby upuścić</string>
+    <string name="game_move_to_position">Przeciągnij, aby ustawić</string>
+    <string name="game_over_title">Koniec gry!</string>
+    <string name="game_final_score">Końcowy wynik: %1$s</string>
+    <string name="game_new_high_score">🎉 Nowy rekord! 🎉</string>
+    <string name="game_save_score_prompt">Zapisać wynik jako %1$s?</string>
+    <string name="game_log_in_to_save_prompt">Zaloguj się, aby zapisać wynik w rankingu.</string>
+    <string name="game_saving">Zapisywanie…</string>
+    <string name="game_save_score">Zapisz wynik</string>
+    <string name="game_ranked">🏆 Zająłeś/aś %1$d. miejsce!</string>
+    <string name="game_score_saved">Wynik zapisany!</string>
+    <string name="game_play_again">Zagraj ponownie</string>
+
+    <string name="instructions_title">Jak grać:</string>
+    <string name="instructions_touch">Dotknij i przeciągnij, aby ustawić pozycję, puść, aby upuścić</string>
+    <string name="instructions_merge">Gdy 2 identyczne owoce się dotkną, natychmiast łączą się w większy owoc!</string>
+    <string name="instructions_chain">Reakcje łańcuchowe występują, gdy połączone owoce dotykają kolejnych identycznych owoców</string>
+    <string name="instructions_physics">Owoce tocą się, przechylają i układają realistycznie — wykorzystaj fizykę na swoją korzyść!</string>
+    <string name="instructions_game_over_rule">Nie pozwól, aby owoce ułożyły się powyżej linii końca gry przez 2 sekundy!</string>
+    <string name="instructions_goal">Cel: Dotrzyj do arbuza! 🍉</string>
+
+    <string name="leaderboard_title">🏆 Top 10</string>
+    <string name="leaderboard_loading">Ładowanie…</string>
+    <string name="leaderboard_retry">Spróbuj ponownie</string>
+    <string name="leaderboard_empty">Brak wyników. Bądź pierwszy!</string>
+
+    <string name="error_login_failed">Logowanie nie powiodło się</string>
+    <string name="error_sign_up_failed">Rejestracja nie powiodła się</string>
+    <string name="error_verification_failed">Weryfikacja nie powiodła się</string>
+    <string name="error_authentication_failed">Uwierzytelnianie nie powiodło się</string>
+    <string name="error_email_verification_failed">Weryfikacja e-maila nie powiodła się</string>
+    <string name="error_failed_to_submit_score">Nie udało się zapisać wyniku</string>
+    <string name="error_failed_to_fetch_leaderboard">Nie udało się pobrać rankingu</string>
+    <string name="error_failed_to_load_scores">Nie udało się załadować wyników</string>
+    <string name="error_session_expired">Sesja wygasła. Zaloguj się ponownie.</string>
+    <string name="error_too_many_requests">Zbyt wiele żądań. Poczekaj chwilę.</string>
+</resources>

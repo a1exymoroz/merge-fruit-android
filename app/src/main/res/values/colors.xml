@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App background gradient, matches web src/index.css -->
+    <color name="gradient_start">#667EEA</color>
+    <color name="gradient_end">#764BA2</color>
+
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#2D3436</color>
+    <color name="text_secondary">#636E72</color>
+    <color name="error">#E74C3C</color>
+    <color name="success">#27AE60</color>
+
+    <color name="container_background">#E8F4F8</color>
+    <color name="game_over_line">#E74C3C</color>
+
+    <!-- Fruit palette, ported from src/constants/fruitArt.tsx -->
+    <color name="fruit_1_body">#4A69BD</color>
+    <color name="fruit_1_accent">#1E3799</color>
+    <color name="fruit_2_body">#E55039</color>
+    <color name="fruit_2_stroke">#B33939</color>
+    <color name="fruit_3_outer">#8E44AD</color>
+    <color name="fruit_3_inner">#F39C12</color>
+    <color name="fruit_3_core">#D35400</color>
+    <color name="fruit_3_stroke">#5E3370</color>
+    <color name="fruit_4_outer">#F1C40F</color>
+    <color name="fruit_4_inner">#FFF9C4</color>
+    <color name="fruit_4_stroke">#E67E22</color>
+    <color name="fruit_5_outer">#8D6E63</color>
+    <color name="fruit_5_inner">#9CCC65</color>
+    <color name="fruit_5_core">#F4F1EA</color>
+    <color name="fruit_5_seed">#2D3436</color>
+    <color name="fruit_5_stroke">#558B2F</color>
+    <color name="fruit_6_outer">#E67E22</color>
+    <color name="fruit_6_inner">#FDF0D5</color>
+    <color name="fruit_6_stroke">#D35400</color>
+    <color name="fruit_7_outer">#E74C3C</color>
+    <color name="fruit_7_inner">#FDF0D5</color>
+    <color name="fruit_7_core">#F7E1B5</color>
+    <color name="fruit_7_seed">#4A2311</color>
+    <color name="fruit_7_stroke">#C0392B</color>
+    <color name="fruit_8_outer">#FF7675</color>
+    <color name="fruit_8_inner">#FFEAA7</color>
+    <color name="fruit_8_core">#D63031</color>
+    <color name="fruit_8_stroke">#D63031</color>
+    <color name="fruit_9_outer">#5D4037</color>
+    <color name="fruit_9_inner">#FFFFFF</color>
+    <color name="fruit_9_core">#E0F7FA</color>
+    <color name="fruit_9_stroke">#3E2723</color>
+    <color name="fruit_10_outer">#2CA181</color>
+    <color name="fruit_10_rind">#D1CCC0</color>
+    <color name="fruit_10_flesh">#F39C12</color>
+    <color name="fruit_10_core">#E1B12C</color>
+    <color name="fruit_10_seed">#F5F6FA</color>
+    <color name="fruit_10_stroke">#1B7A61</color>
+    <color name="fruit_11_outer">#27AE60</color>
+    <color name="fruit_11_rind">#ECF0F1</color>
+    <color name="fruit_11_flesh">#FF4757</color>
+    <color name="fruit_11_seed">#2F3542</color>
+    <color name="fruit_11_stroke">#1E8449</color>
+</resources>
