@@ -7,10 +7,19 @@
 debugApiBaseUrl=http://10.0.2.2:8080
 
 # The base URL for the backend API during release builds
-# Default: https://merge-fruit-api.onrender.com
-releaseApiBaseUrl=https://merge-fruit-api.onrender.com
+# Default: https://your-backend.example.com
+releaseApiBaseUrl=https://your-backend.example.com
 
 # Test Credentials (Optional)
 # Used to pre-fill the Login screen in debug builds.
 testUserEmail=user@example.com
 testUserPassword=password123
+
+# Release Signing (Optional, needed only to build a signed release APK/AAB)
+# Generate a keystore with keytool and point these at it. Never commit the
+# actual .jks file or real passwords — this template only holds placeholders.
+# Path is resolved relative to the app/ module directory (not the project root).
+releaseKeystorePath=keystore/release.jks
+releaseKeystorePassword=changeit
+releaseKeyAlias=changeit
+releaseKeyPassword=changeit

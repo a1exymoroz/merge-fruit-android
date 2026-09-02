@@ -32,7 +32,7 @@ on `PATH`/`JAVA_HOME` and the Android SDK is installed with
 
 Debug builds default to `http://10.0.2.2:8080` (the emulator's alias for
 your machine's `localhost`); release builds default to the deployed
-`https://merge-fruit-api.onrender.com`. Override either via a local
+your configured production backend (see `local.properties`). Override either via a local
 `local.properties` entry — see
 [`docs/building-and-running.md`](docs/building-and-running.md#4-pointing-it-at-a-backend)
 for details and physical-device caveats.
