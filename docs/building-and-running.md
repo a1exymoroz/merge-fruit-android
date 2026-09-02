@@ -74,8 +74,10 @@ Just like the web app's `VITE_API_BASE_URL`, this app needs to know where
   machine!) — either run the backend somewhere your phone can reach over
   the network and override the URL (see below), or point at the deployed
   backend instead.
-- **Release builds** point at the deployed backend,
-  `https://merge-fruit-api.onrender.com` (same one the live web app uses).
+- **Release builds** point at whatever `releaseApiBaseUrl` (or
+  `RELEASE_API_BASE_URL`) resolves to — a placeholder by default in the
+  tracked files; set the real one in your own `local.properties` (see
+  below), which is git-ignored.
 
 To override either without editing any tracked file, create a
 `local.properties` file in the project root (this file is already

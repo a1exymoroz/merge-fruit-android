@@ -27,6 +27,26 @@ android {
         versionName = "1.0"
     }
 
+    // Release signing is optional at the Gradle level: if no keystore is
+    // configured (e.g. a fresh checkout without local.properties entries),
+    // `assembleRelease` still succeeds and just produces an unsigned build
+    // instead of failing. See local.properties.template for the properties.
+    // releaseKeystorePath is resolved relative to *this* module dir (app/),
+    // not the project root.
+    val releaseKeystorePath = stringProperty("releaseKeystorePath", "")
+    val hasReleaseSigning = releaseKeystorePath.isNotBlank() && file(releaseKeystorePath).exists()
+
+    signingConfigs {
+        if (hasReleaseSigning) {
+            create("release") {
+                storeFile = file(releaseKeystorePath)
+                storePassword = stringProperty("releaseKeystorePassword", "")
+                keyAlias = stringProperty("releaseKeyAlias", "")
+                keyPassword = stringProperty("releaseKeyPassword", "")
+            }
+        }
+    }
+
     buildTypes {
         debug {
             buildConfigField(
@@ -48,10 +68,18 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            // LoginScreen references these unconditionally (debug convenience
+            // pre-fill); release must never ship real test credentials, so
+            // these are always empty here regardless of local.properties.
+            buildConfigField("String", "TEST_USER_EMAIL", "\"\"")
+            buildConfigField("String", "TEST_USER_PASSWORD", "\"\"")
+            if (hasReleaseSigning) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             buildConfigField(
                 "String",
                 "API_BASE_URL",
-                "\"${stringProperty("releaseApiBaseUrl", stringProperty("RELEASE_API_BASE_URL", "https://merge-fruit-api.onrender.com"))}\"",
+                "\"${stringProperty("releaseApiBaseUrl", stringProperty("RELEASE_API_BASE_URL", "https://your-backend.example.com"))}\"",
             )
         }
     }

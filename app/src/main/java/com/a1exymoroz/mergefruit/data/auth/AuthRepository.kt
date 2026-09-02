@@ -89,7 +89,7 @@ class AuthRepository(
             verificationToken = dto.verificationToken,
         )
         authStorage.setStoredAuth(stored)
-        _state.value = _state.value.copy(user = stored)
+        _state.value = _state.value.copy(user = stored, isGuest = false)
         return stored
     }
 

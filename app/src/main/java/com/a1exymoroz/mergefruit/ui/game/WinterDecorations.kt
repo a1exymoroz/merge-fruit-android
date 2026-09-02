@@ -7,17 +7,16 @@ import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Path
-import androidx.compose.ui.graphics.PathEffect
-import androidx.compose.ui.graphics.StrokeCap
-import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import com.a1exymoroz.mergefruit.R
 import kotlin.random.Random
 
 /** Full-screen drifting snow, drawn behind everything on the game screen when the New Year skin is on. */
@@ -54,31 +53,13 @@ fun SnowLayer(modifier: Modifier = Modifier) {
 
 private data class Flake(val x: Float, val y: Float, val radius: Float, val speed: Float, val drift: Float)
 
-/** A striped candy cane, drawn above the jar for the New Year skin. */
+/** A candy cane image, drawn above the jar for the New Year skin. */
 @Composable
 fun CandyCane(modifier: Modifier = Modifier) {
-    Canvas(modifier = modifier) {
-        val w = size.width
-        val h = size.height
-        val thickness = h * 0.26f
-        // A cane lying on its side: a short hook that curls up and over, flowing into a long shaft.
-        val path = Path().apply {
-            moveTo(w * 0.14f, h * 0.62f)
-            quadraticBezierTo(w * 0.10f, h * 0.16f, w * 0.30f, h * 0.16f)
-            quadraticBezierTo(w * 0.44f, h * 0.16f, w * 0.46f, h * 0.46f)
-            moveTo(w * 0.30f, h * 0.16f)
-            quadraticBezierTo(w * 0.62f, h * 0.20f, w * 0.90f, h * 0.78f)
-        }
-        // Solid red cane, then white barber-pole stripes on top via a dashed stroke.
-        drawPath(path, Color(0xFFE23B3B), style = Stroke(width = thickness, cap = StrokeCap.Round))
-        drawPath(
-            path,
-            Color.White,
-            style = Stroke(
-                width = thickness,
-                cap = StrokeCap.Butt,
-                pathEffect = PathEffect.dashPathEffect(floatArrayOf(thickness * 0.5f, thickness * 0.8f), 0f),
-            ),
-        )
-    }
+    Image(
+        painter = painterResource(R.drawable.candy_cane),
+        contentDescription = null,
+        modifier = modifier,
+        contentScale = ContentScale.Fit,
+    )
 }
