@@ -13,6 +13,9 @@ what data it collects and how it's used.
   password.
 - **Gameplay data**: your scores, submitted to power the in-app leaderboard.
 
+You can also play as a guest without an account, in which case no account
+information is collected and scores are not submitted.
+
 We do not collect your location, contacts, photos, device identifiers, or
 any data beyond what's listed above. The app requests no permissions other
 than network (internet) access.
@@ -47,4 +50,4 @@ If this policy changes, the "Last updated" date above will be revised.
 ## Contact
 
 Questions about this policy or your data can be sent to:
-**a1exy.moroz@gmail.com**
+**a1exy.moroz.pl@gmail.com**
