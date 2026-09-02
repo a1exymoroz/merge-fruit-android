@@ -106,7 +106,7 @@ because of the leaderboard.
 |---|---|---|
 | Signed release APK | `app/build/outputs/apk/release/app-release.apk` (v2-signed, `com.a1exymoroz.mergefruit`, versionCode 1) | ✅ built |
 | App icon | 512 × 512 PNG | ✅ `docs/store-assets/icon-512.png` (regenerate with `make_icon.py`) |
-| Screenshots | 4–8 phone screenshots, PNG/JPG, min ~480 px, portrait | ⬜ capture on a device/emulator (auth screen, game in play, a merge/chain, game-over + leaderboard) |
+| Screenshots | 4–8 phone screenshots, PNG/JPG, min ~480 px, portrait | ✅ `docs/store-assets/screenshots/` — 6 shots, 1080×2400, captured on an API-37 emulator (welcome, early game, full board, fruit dropping, game over, how-to-play) |
 | Privacy policy URL | public HTTPS page | ⬜ enable GitHub Pages (below) |
 
 ### 1. Register as a seller (one-time)
@@ -127,7 +127,9 @@ because of the leaderboard.
 4. **Country / Region**: **Add All**, or pick a set (at minimum Poland). Choose "release automatically after approval".
 5. **Store Listing / Graphics**
    - App icon: upload `docs/store-assets/icon-512.png`
-   - Screenshots: upload the 4–8 you captured
+   - Screenshots: upload `docs/store-assets/screenshots/01…06` (1080×2400). If the
+     portal rejects the 9:20 aspect ratio, crop each to 1080×1920 or retake on a
+     16:9 device — the current shots keep the status bar and gesture pill.
    - (Feature/promo graphics are optional — skip for v1)
 6. **Age rating**: click into the **IARC questionnaire** and answer per the table above. Save the certificate it issues.
 7. **Price**: Free.
