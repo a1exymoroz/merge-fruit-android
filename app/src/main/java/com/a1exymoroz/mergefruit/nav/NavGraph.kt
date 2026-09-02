@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -32,6 +33,7 @@ import com.a1exymoroz.mergefruit.ui.game.GameScreen
 import com.a1exymoroz.mergefruit.ui.leaderboard.LeaderboardViewModel
 import com.a1exymoroz.mergefruit.ui.theme.GameThemeOption
 import com.a1exymoroz.mergefruit.ui.theme.appBackground
+import kotlinx.coroutines.flow.StateFlow
 
 private object Routes {
     const val ROOT = "root"
@@ -54,6 +56,8 @@ private object Routes {
 fun MergeFruitNavGraph(
     container: AppContainer,
     onSetTheme: (GameThemeOption) -> Unit,
+    deepLinkUri: StateFlow<Uri?>,
+    onDeepLinkConsumed: () -> Unit,
 ) {
     val navController = rememberNavController()
     val factory = remember { AppViewModelFactory(container) }
@@ -71,6 +75,18 @@ fun MergeFruitNavGraph(
             popUpTo(Routes.ROOT) { inclusive = false }
             launchSingleTop = true
         }
+    }
+
+    // Verify-email deep link (mergefruit://verify?token=...) from the signup email.
+    val deepLink by deepLinkUri.collectAsStateWithLifecycle()
+    LaunchedEffect(deepLink) {
+        val uri = deepLink ?: return@LaunchedEffect
+        if (uri.host == "verify") {
+            navController.navigate(Routes.verify(uri.getQueryParameter("token"), checkEmail = false)) {
+                launchSingleTop = true
+            }
+        }
+        onDeepLinkConsumed()
     }
 
     NavHost(navController = navController, startDestination = Routes.ROOT) {

@@ -16,10 +16,19 @@ object ApiConfig {
         .add(KotlinJsonAdapterFactory())
         .build()
 
+    /** Tells the backend which client called, so it can pick the right verify-email link. */
+    private const val CLIENT_PLATFORM = "android"
+
     private val okHttpClient: OkHttpClient by lazy {
         OkHttpClient.Builder()
             .connectTimeout(60, TimeUnit.SECONDS)
             .readTimeout(60, TimeUnit.SECONDS)
+            .addInterceptor { chain ->
+                val request = chain.request().newBuilder()
+                    .header("X-Client-Platform", CLIENT_PLATFORM)
+                    .build()
+                chain.proceed(request)
+            }
             .apply {
                 if (BuildConfig.DEBUG) {
                     addInterceptor(HttpLoggingInterceptor().apply { level = HttpLoggingInterceptor.Level.BASIC })
