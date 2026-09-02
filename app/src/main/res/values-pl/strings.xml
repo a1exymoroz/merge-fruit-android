@@ -67,7 +67,6 @@
     <string name="game_high_score">Rekord: %1$s</string>
     <string name="game_next_fruit">Następny owoc:</string>
     <string name="game_reset">Resetuj grę</string>
-    <string name="game_over_line_label">Linia końca gry</string>
     <string name="game_release_to_drop">Puść, aby upuścić</string>
     <string name="game_move_to_position">Przeciągnij, aby ustawić</string>
     <string name="game_over_title">Koniec gry!</string>

@@ -73,7 +73,6 @@
     <string name="game_high_score">High Score: %1$s</string>
     <string name="game_next_fruit">Next Fruit:</string>
     <string name="game_reset">Reset Game</string>
-    <string name="game_over_line_label">Game Over Line</string>
     <string name="game_release_to_drop">Release to Drop</string>
     <string name="game_move_to_position">Drag to Position</string>
     <string name="game_over_title">Game Over!</string>

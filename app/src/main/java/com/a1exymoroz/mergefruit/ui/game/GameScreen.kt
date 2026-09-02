@@ -37,7 +37,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathEffect
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
@@ -308,8 +310,8 @@ private fun GameContainerSection(
         if (showCandyCane) {
             CandyCane(
                 Modifier
-                    .fillMaxWidth(0.6f)
-                    .height(58.dp)
+                    .height(96.dp)
+                    .rotate(-60f)
                     .padding(bottom = 4.dp),
             )
         }
@@ -351,19 +353,20 @@ private fun GameContainerSection(
                     )
                 }
 
-                Box(
+                Canvas(
                     modifier = Modifier
                         .offsetDp(0f, lineY)
                         .fillMaxWidth()
-                        .height(2.dp)
-                        .background(GameOverLineColor.copy(alpha = 0.6f)),
-                )
-                Text(
-                    stringResource(R.string.game_over_line_label),
-                    color = GameOverLineColor,
-                    fontSize = 10.sp,
-                    modifier = Modifier.offsetDp(4f, lineY + 2f),
-                )
+                        .height(2.dp),
+                ) {
+                    drawLine(
+                        color = GameOverLineColor.copy(alpha = 0.45f),
+                        start = Offset(0f, size.height / 2f),
+                        end = Offset(size.width, size.height / 2f),
+                        strokeWidth = size.height,
+                        pathEffect = PathEffect.dashPathEffect(floatArrayOf(14f, 10f), 0f),
+                    )
+                }
 
                 Box(
                     modifier = Modifier

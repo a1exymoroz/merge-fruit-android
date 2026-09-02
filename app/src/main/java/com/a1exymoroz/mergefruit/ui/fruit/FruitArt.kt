@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -12,6 +13,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.drawscope.clipPath
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.unit.Dp
 import com.a1exymoroz.mergefruit.game.FruitType
@@ -125,15 +127,22 @@ private fun DrawScope.drawAccent(id: Int, center: Offset, r: Float, palette: Fru
         9 -> { // coconut pale patch
             drawCircle(palette.accent, r * 0.5f, Offset(cx + r * 0.15f, cy + r * 0.1f))
         }
-        10 -> { // melon net
-            for (k in -2..2) {
-                drawLine(palette.accent.copy(alpha = 0.5f), Offset(cx + k * r * 0.32f, cy - r), Offset(cx + k * r * 0.32f, cy + r), strokeWidth = r * 0.05f)
+        10 -> { // melon net — a real crosshatch, clipped to the body so it can't spike past the edge
+            clipPath(Path().apply { addOval(Rect(center = Offset(cx, cy), radius = r)) }) {
+                for (k in -2..2) {
+                    drawLine(palette.accent.copy(alpha = 0.65f), Offset(cx + k * r * 0.32f, cy - r), Offset(cx + k * r * 0.32f, cy + r), strokeWidth = r * 0.06f)
+                }
+                for (k in -2..2) {
+                    drawLine(palette.accent.copy(alpha = 0.5f), Offset(cx - r, cy + k * r * 0.32f), Offset(cx + r, cy + k * r * 0.32f), strokeWidth = r * 0.05f)
+                }
             }
         }
-        11 -> { // watermelon stripes
-            for (k in -2..2) {
-                val x = cx + k * r * 0.42f
-                drawLine(palette.accent, Offset(x, cy - r * 0.95f), Offset(x, cy + r * 0.95f), strokeWidth = r * 0.14f)
+        11 -> { // watermelon stripes, clipped to the body so the outer stripes can't spike past the edge
+            clipPath(Path().apply { addOval(Rect(center = Offset(cx, cy), radius = r)) }) {
+                for (k in -2..2) {
+                    val x = cx + k * r * 0.42f
+                    drawLine(palette.accent, Offset(x, cy - r), Offset(x, cy + r), strokeWidth = r * 0.16f)
+                }
             }
         }
     }

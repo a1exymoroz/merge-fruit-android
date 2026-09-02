@@ -67,7 +67,6 @@
     <string name="game_high_score">Рекорд: %1$s</string>
     <string name="game_next_fruit">Следующий фрукт:</string>
     <string name="game_reset">Сбросить игру</string>
-    <string name="game_over_line_label">Линия проигрыша</string>
     <string name="game_release_to_drop">Отпустите, чтобы бросить</string>
     <string name="game_move_to_position">Перетащите, чтобы позиционировать</string>
     <string name="game_over_title">Игра окончена!</string>
