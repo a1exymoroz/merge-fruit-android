@@ -97,6 +97,50 @@ because of the leaderboard.
 
 ---
 
+---
+
+## Step-by-step: creating the app in Seller Portal
+
+### 0. Assets you need on hand
+| Asset | Spec | Status |
+|---|---|---|
+| Signed release APK | `app/build/outputs/apk/release/app-release.apk` (v2-signed, `com.a1exymoroz.mergefruit`, versionCode 1) | ✅ built |
+| App icon | 512 × 512 PNG | ✅ `docs/store-assets/icon-512.png` (regenerate with `make_icon.py`) |
+| Screenshots | 4–8 phone screenshots, PNG/JPG, min ~480 px, portrait | ✅ `docs/store-assets/screenshots/` — 6 shots, 1080×2400, captured on an API-37 emulator (welcome, early game, full board, fruit dropping, game over, how-to-play) |
+| Privacy policy URL | public HTTPS page | ⬜ enable GitHub Pages (below) |
+
+### 1. Register as a seller (one-time)
+1. Go to <https://seller.samsungapps.com> and sign in with your Samsung account (`a1exy.moroz.pl@gmail.com`).
+2. Choose **Individual** seller (Commercial needs business/tax documents; Individual is fine for a free app with no in-app purchases).
+3. Fill in name / address / phone, accept the Seller Portal agreement. Individual accounts are approved immediately.
+
+### 2. Add New Application
+1. Dashboard → **Add New Application** → set **Default language** = English → **Create**.
+2. **App Information**
+   - Title: `Merge Fruit`
+   - Short + full description: paste from the sections above
+   - App category: **Games → Puzzle** (or Casual)
+   - Privacy policy URL: `https://a1exymoroz.github.io/merge-fruit-android/privacy-policy.html`
+3. **Binary**
+   - Upload `app-release.apk`. The portal reads the package name, versionCode, min/target SDK automatically.
+   - Leave it as the default binary for all resolutions / API levels.
+4. **Country / Region**: **Add All**, or pick a set (at minimum Poland). Choose "release automatically after approval".
+5. **Store Listing / Graphics**
+   - App icon: upload `docs/store-assets/icon-512.png`
+   - Screenshots: upload `docs/store-assets/screenshots/01…06` (1080×2400). If the
+     portal rejects the 9:20 aspect ratio, crop each to 1080×1920 or retake on a
+     16:9 device — the current shots keep the status bar and gesture pill.
+   - (Feature/promo graphics are optional — skip for v1)
+6. **Age rating**: click into the **IARC questionnaire** and answer per the table above. Save the certificate it issues.
+7. **Price**: Free.
+8. Review the summary, then **Submit for review**. Samsung's review typically takes 1–3 business days; you'll get an email on approval or rejection.
+
+### 3. After approval
+- Confirm the listing is live and the privacy-policy link resolves.
+- Keep `app/keystore/release.jks` + the `local.properties` signing passwords backed up off-machine — every future update must be signed with this exact key.
+
+---
+
 ## Enabling the privacy-policy URL
 
 The policy is committed as static HTML under `docs/`. To publish it:
